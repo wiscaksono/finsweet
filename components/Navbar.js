@@ -4,7 +4,9 @@ export default function Navbar() {
   return (
     <nav className="wrapper mt-[8px] roboto mb-7px">
       <div className="flex justify-between items-center">
-        <img src="logo.svg" alt="" />
+        <a onClick={() => router.push("/")} href="#">
+          <img src="logo.svg" alt="" />
+        </a>
         <div className="flex items-center gap-[32px]">
           <ul className="flex gap-[32px] text-primary">
             <li>

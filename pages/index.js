@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CTA from "../components/CTA";
 import Logoipsum from "../components/Logoipsum";
+import Features from "../components/Features";
 
 const Service = ({ icon, title }) => {
   return (
@@ -19,21 +20,6 @@ const Service = ({ icon, title }) => {
         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
         nonumy.
       </p>
-    </div>
-  );
-};
-
-const Features = ({ icon, title }) => {
-  return (
-    <div>
-      <img src={icon} alt="" className="mb-[24px]" />
-      <div className="w-[339px] h-[183px]">
-        <h3 className="mb-[16px]">{title}</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-          nonumy eirmod tempor.
-        </p>
-      </div>
     </div>
   );
 };

@@ -100,10 +100,18 @@ export default function Footer() {
             © Copyright Finsweet 2022
           </p>
           <div className="flex gap-[24px] opacity-60">
-            <img src="Facebook.svg" alt="" />
-            <img src="Twitter.svg" alt="" />
-            <img src="Instagram.svg" alt="" />
-            <img src="Linkedin.svg" alt="" />
+            <a href="#">
+              <img src="Facebook.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="Twitter.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="Instagram.svg" alt="" />
+            </a>
+            <a href="#">
+              <img src="Linkedin.svg" alt="" />
+            </a>
           </div>
         </div>
         <img src="footer-line.svg" alt="" />
