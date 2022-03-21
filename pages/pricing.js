@@ -66,11 +66,11 @@ const Pricing = ({
 const Sumary = ({ title, paragraph }) => {
   return (
     <div className="mb-[16px]">
-      <details class="bg-white rounded-[24px]   p-[40px] ">
-        <summary class=" text-primary font-bold text-[24px] roboto select-none">
+      <details className="bg-white rounded-[24px]   p-[40px] ">
+        <summary className=" text-primary font-bold text-[24px] roboto select-none">
           {title}
         </summary>
-        <div class="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
+        <div className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-400">
           <p>{paragraph}</p>
         </div>
       </details>
