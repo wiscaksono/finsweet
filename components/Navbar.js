@@ -1,4 +1,6 @@
+import { useRouter } from "next/router";
 export default function Navbar() {
+  const router = useRouter();
   return (
     <nav className="wrapper mt-[8px] roboto mb-7px">
       <div className="flex justify-between items-center">
@@ -6,22 +8,34 @@ export default function Navbar() {
         <div className="flex items-center gap-[32px]">
           <ul className="flex gap-[32px] text-primary">
             <li>
-              <a href="#">Home</a>
+              <a href="#" onClick={() => router.push("/")}>
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">Product</a>
+              <a href="#" onClick={() => router.push("/product")}>
+                Product
+              </a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a href="#" onClick={() => router.push("/pricing")}>
+                Pricing
+              </a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#" onClick={() => router.push("/aboutUs")}>
+                About Us
+              </a>
             </li>
             <li>
-              <a href="#">Blog</a>
+              <a href="#" onClick={() => router.push("/blog")}>
+                Blog
+              </a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#" onClick={() => router.push("/contact")}>
+                Contact
+              </a>
             </li>
           </ul>
           <button className="bg-primary py-[16px] px-[40px] rounded-[12px]">

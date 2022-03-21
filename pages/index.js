@@ -3,6 +3,8 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import CTA from "../components/CTA";
+import Logoipsum from "../components/Logoipsum";
 
 const Service = ({ icon, title }) => {
   return (
@@ -184,13 +186,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className="wrapper flex justify-between mt-[64px] mb-[128px]">
-        <img src="logoipsum1.svg" alt="" />
-        <img src="logoipsum2.svg" alt="" />
-        <img src="logoipsum3.svg" alt="" />
-        <img src="logoipsum4.svg" alt="" />
-        <img src="logoipsum5.svg" alt="" />
-      </div>
+      <Logoipsum></Logoipsum>
 
       <section className="wrapper flex items-center justify-between mb-[128px]">
         <div className="flex items-center  w-[577px]">
@@ -295,26 +291,7 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <section className="wrapper mb-[128px]">
-        <div className="text-center">
-          <h1 className="w-[846px] mx-auto mb-[24px]">
-            Are you ready to grow your business with us?
-          </h1>
-          <p className="mb-[32px]">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy.
-          </p>
-        </div>
-        <div className="flex items-center justify-center">
-          <button
-            type="button"
-            className="flex-shrink-0 border-transparent border-4 text-white  py-[16px] px-[40px] bg-primary rounded-[12px] right-[8px]"
-          >
-            <h6 className="text-white">Get Free trial</h6>
-          </button>
-        </div>
-      </section>
+      <CTA></CTA>
       <Footer></Footer>
     </>
   );
