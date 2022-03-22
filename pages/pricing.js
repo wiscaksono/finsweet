@@ -15,7 +15,7 @@ const Pricing = ({
   priceDesc,
 }) => {
   return (
-    <div className="border-4 border-light-violet bg-white rounded-[24px] hover:border-4 hover:border-blue transition-all">
+    <div className="border-4 border-light-violet transition-colors   bg-white hover:bg-gradient-to-br from-[#CCE7DD] via-[#C6DEEB] to-[#D9DEEA] rounded-[24px]  hover:border-blue ">
       <div className="flex items-center gap-[24px] pt-[48px] pl-[48px] pb-[33px] border-b border-[#D8D8D8]">
         <div>
           <img src="regular-plan.svg" alt="" />

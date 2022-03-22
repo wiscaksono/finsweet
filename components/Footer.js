@@ -80,7 +80,7 @@ export default function Footer() {
           <div className="w-[410px] flex items-center justify-center mx-auto relative mb-[64px]">
             <input
               type="email"
-              className="w-full py-[16px] px-[22px] rounded-[20px] bg-[#2B2E3C] placeholder-text-white/50 text-white border-none"
+              className="w-full py-[16px] px-[22px] rounded-[20px] bg-[#2B2E3C] placeholder-text-white/50 text-white border-none outline-none"
               placeholder="Enter your Email"
             />
             <button

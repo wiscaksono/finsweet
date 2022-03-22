@@ -148,7 +148,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-light-violet">
+      <section className=" bg-gradient-to-r from-[#CCE7DD] via-[#C6DEEB] to-[#D9DEEA]">
         <div className="py-[64px] flex items-center justify-between wrapper">
           <div className="flex items-center  w-[577px]">
             <div className="">
