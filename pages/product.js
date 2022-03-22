@@ -27,6 +27,12 @@ export default function product() {
   return (
     <>
       <Navbar />
+      <div>
+        <div className="absolute -z-50 -top-[300px] -right-[200px]">
+          <img src="that-convert.png" alt="" />
+        </div>
+      </div>
+
       <section className="wrapper mt-[97px] mb-[96px]">
         <div className="flex items-center justify-between">
           <div className="w-[576px]">
@@ -102,6 +108,9 @@ export default function product() {
       </section>
 
       <section className="wrapper flex gap-[88px] my-[128px] items-center">
+        <div className="absolute -z-10 right-0">
+          <img src="/that-convert.png" alt="" className="w-full h-full" />
+        </div>
         <div>
           <p className="label mb-[24px]">Lead Generation</p>
           <div className="w-[576px]">
