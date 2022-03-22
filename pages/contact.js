@@ -34,7 +34,7 @@ export default function contact() {
                 <div className="flex gap-[16px]">
                   <div className="w-full flex-1">
                     <input
-                      class="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
+                      className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                       id="grid-first-name"
                       type="text"
                       placeholder="Full Name"
@@ -42,7 +42,7 @@ export default function contact() {
                   </div>
                   <div className="w-full flex-1">
                     <input
-                      class="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
+                      className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                       id="grid-first-name"
                       type="text"
                       placeholder="Company Name"
@@ -51,7 +51,7 @@ export default function contact() {
                 </div>
                 <div className="w-full flex-1">
                   <input
-                    class="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
+                    className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                     id="grid-first-name"
                     type="text"
                     placeholder="Work Email"
@@ -59,7 +59,7 @@ export default function contact() {
                 </div>
                 <div className="w-full flex-1">
                   <input
-                    class="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
+                    className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                     id="grid-first-name"
                     type="text"
                     placeholder="Subject"
@@ -67,7 +67,7 @@ export default function contact() {
                 </div>
                 <div className="w-full flex-1">
                   <textarea
-                    class=" form-control block w-full px-3 py-1.5 text-base font-normal text-primary bg-white bg-clip-padding  rounded-[8px] transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] pl-[20px] resize-none  roboto"
+                    className=" form-control block w-full px-3 py-1.5 text-base font-normal text-primary bg-white bg-clip-padding  rounded-[8px] transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] pl-[20px] resize-none  roboto"
                     id="exampleFormControlTextarea1"
                     rows="5"
                     placeholder="Message"

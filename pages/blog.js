@@ -6,11 +6,11 @@ import Link from "next/link";
 const Posts = ({ img, title, paragraph }) => {
   return (
     <div className="flex gap-[32px] flex-col">
-      <Link href="/blog/blogPost">
+      <Link href="/blog/blogPost" passHref>
         <img src={img} alt="" className="cursor-pointer" />
       </Link>
       <div className="flex-col gap-[16px] flex">
-        <Link href="/blog/blogPost">
+        <Link href="/blog/blogPost" passHref>
           <h4 className="cursor-pointer">{title}</h4>
         </Link>
         <p>{paragraph}</p>
@@ -39,7 +39,7 @@ export default function blog() {
           <div className="flex wrapper gap-[48px]  items-center p-[64px]">
             <div className="w-1/2 flex gap-[24px] flex-col">
               <p className="label ">Trending Post</p>
-              <Link href="/blog/blogPost">
+              <Link href="/blog/blogPost " passHref>
                 <h2 className="cursor-pointer">
                   New invoicing features to help you get paid faster
                 </h2>
@@ -54,7 +54,7 @@ export default function blog() {
               </p>
             </div>
             <div className="w-1/2 ">
-              <Link href="/blog/blogPost">
+              <Link href="/blog/blogPost" passHref>
                 <img
                   src="wfh-blog.png"
                   alt=""
