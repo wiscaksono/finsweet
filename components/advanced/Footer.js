@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="bg-primary">
-      <div className="wrapper pt-[64px] flex justify-between">
+      <div className="wrapper pt-[64px] flex justify-between test">
         <div className="flex gap-[58px]">
           <div className="w-[230px]">
             <p className="text-white roboto font-semibold text-[18px] mb-[8px]">
