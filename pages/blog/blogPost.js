@@ -1,6 +1,5 @@
-import Navbar from "../../components/Navbar";
-import CTA from "../../components/CTA";
-import Footer from "../../components/Footer";
+import { CTA } from "../../components/partials";
+import { Footer } from "../../components/advanced";
 import Link from "next/dist/client/link";
 
 const Posts = ({ img, title, paragraph }) => {
@@ -24,7 +23,6 @@ const Posts = ({ img, title, paragraph }) => {
 export default function blogPost() {
   return (
     <>
-      <Navbar></Navbar>
       <section className="wrapper mb-[128px]">
         <div className="mt-[96px] mb-[48px]">
           <h1 className="text-center mb-[24px] w-[768px] mx-auto">
