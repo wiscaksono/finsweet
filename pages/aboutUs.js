@@ -1,5 +1,5 @@
 import Navbar from "../components/advanced/Navbar";
-import CTA from "../components/CTA";
+import { CTA } from "../components/partials";
 import Footer from "../components/advanced/Footer";
 
 const Features = ({ img, title }) => {
