@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/advanced/Navbar";
+import Footer from "../components/advanced/Footer";
 import CTA from "../components/CTA";
 import Button from "../components/Button";
 
@@ -32,7 +32,7 @@ export default function contact() {
             <div className="w-1/2">
               <div className="flex flex-col">
                 <div className="flex gap-[16px]">
-                  <div className="w-full flex-1">
+                  <div className="flex-1 w-full">
                     <input
                       className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                       id="grid-first-name"
@@ -40,7 +40,7 @@ export default function contact() {
                       placeholder="Full Name"
                     />
                   </div>
-                  <div className="w-full flex-1">
+                  <div className="flex-1 w-full">
                     <input
                       className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                       id="grid-first-name"
@@ -49,7 +49,7 @@ export default function contact() {
                     />
                   </div>
                 </div>
-                <div className="w-full flex-1">
+                <div className="flex-1 w-full">
                   <input
                     className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                     id="grid-first-name"
@@ -57,7 +57,7 @@ export default function contact() {
                     placeholder="Work Email"
                   />
                 </div>
-                <div className="w-full flex-1">
+                <div className="flex-1 w-full">
                   <input
                     className="appearance-none block w-full  text-primary rounded-[8px] py-[20px] pl-[24px] mb-3 leading-tight focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] roboto"
                     id="grid-first-name"
@@ -65,7 +65,7 @@ export default function contact() {
                     placeholder="Subject"
                   />
                 </div>
-                <div className="w-full flex-1">
+                <div className="flex-1 w-full">
                   <textarea
                     className=" form-control block w-full px-3 py-1.5 text-base font-normal text-primary bg-white bg-clip-padding  rounded-[8px] transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none placeholder:text-primary/50 placeholder:roboto placeholder:text-[16px] pl-[20px] resize-none  roboto"
                     id="exampleFormControlTextarea1"

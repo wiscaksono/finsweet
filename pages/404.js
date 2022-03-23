@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/advanced/Navbar";
 export default function FourOhFour() {
   return (
     <>

@@ -1,5 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "../components/advanced/Navbar";
+import Footer from "../components/advanced/Footer";
 import CTA from "../components/CTA";
 import Btn from "../components/Button";
 import BtnWhite from "../components/ButtonWhite";

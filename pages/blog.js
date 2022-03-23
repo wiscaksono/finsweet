@@ -1,6 +1,6 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/advanced/Navbar";
 import CTA from "../components/CTA";
-import Footer from "../components/Footer";
+import Footer from "../components/advanced/Footer";
 import Link from "next/link";
 
 const Posts = ({ img, title, paragraph }) => {
