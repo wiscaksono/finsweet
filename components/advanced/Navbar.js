@@ -1,15 +1,14 @@
 import { useRouter } from "next/router";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap, { Power3 } from "gsap";
 
 export default function Navbar() {
   const router = useRouter();
-  let logo = useRef(null);
 
   useEffect(() => {
     const tl = new gsap.timeline();
 
-    tl.from(logo, 0.7, { opacity: 0, y: -50 })
+    tl.from("#logo", 0.7, { opacity: 0, y: -50 })
     tl.from("#menu-item", 1, {
       opacity: 0,
       y: -50,
@@ -26,7 +25,7 @@ export default function Navbar() {
     <section className="bg-white">
       <nav className="z-50 py-8 wrapper roboto ">
         <div className="flex items-center justify-between ">
-          <a className="cursor-pointer" ref={el => logo = el} onClick={() => router.push("/")}>
+          <a className="cursor-pointer" id="logo" onClick={() => router.push("/")}>
             <img src="logo.svg" alt="" />
           </a>
           <div className="flex items-center gap-[32px]">
