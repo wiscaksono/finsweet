@@ -1,6 +1,5 @@
-import Navbar from "../components/advanced/Navbar";
-import Footer from "../components/advanced/Footer";
-import CTA from "../components/CTA";
+import { Navbar, Footer } from "../components/advanced";
+import { CTA } from "../components/partials";
 import Btn from "../components/Button";
 
 const Pricing = ({

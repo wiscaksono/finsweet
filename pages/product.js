@@ -1,9 +1,7 @@
-import Navbar from "../components/advanced/Navbar";
-import Footer from "../components/advanced/Footer";
-import CTA from "../components/CTA";
+import {Navbar, Footer} from "../components/advanced";
+import {CTA, Logoipsum} from "../components/partials";
 import Btn from "../components/Button";
 import BtnWhite from "../components/ButtonWhite";
-import Logoipsum from "../components/Logoipsum";
 import Features from "../components/Features";
 
 const Service = ({ icon, title }) => {
