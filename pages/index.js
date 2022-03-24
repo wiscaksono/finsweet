@@ -38,7 +38,6 @@ export default function Home() {
             title="Full time customer support - 24/7"
           />
         </Service>
-
         {/* Why Us */}
         <section className="wrapper grid grid-cols-2 gap-8 mb-[128px]">
           <Title
@@ -70,7 +69,50 @@ export default function Home() {
           </div>
         </section>
 
-        <HomeContent />
+        <section className=" bg-gradient-to-r from-[#CCE7DD] via-[#C6DEEB] to-[#D9DEEA]">
+          <div className="py-[64px] grid grid-cols-2 gap-8 wrapper">
+            <Title
+              title={"More impressions, more conversions"}
+              position={false}
+            >
+              <p className="my-8">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                aliquyam erat, sed diam voluptua invidunt ut labore.
+              </p>
+              <button
+                type="button"
+                className="flex-shrink-0 border-transparent border-4 text-white  py-[16px] px-[40px] bg-primary rounded-[12px] right-[8px]"
+              >
+                <h6 className="text-white">Get Free trial</h6>
+              </button>
+            </Title>
+            <div className="flex flex-col gap-[32px] mr-[40px]">
+              <div className="w-[563px] h-[437.39px] relative">
+                <img
+                  src="animate1.svg"
+                  alt=""
+                  className="absolute left-0 bottom-[136px] animate-bounce "
+                />
+                <img
+                  src="animate2.svg"
+                  alt=""
+                  className="absolute top-0 left-[83px] animate-bounce z-10 shadow-md"
+                />
+                <img
+                  src="animate3.svg"
+                  alt=""
+                  className="absolute bottom-0 left-[148px] animate-bounce "
+                />
+                <img
+                  src="animate4.svg"
+                  alt=""
+                  className="absolute right-0 top-[194px] animate-bounce"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
         <Logoipsum />
 
         {/* Discover */}

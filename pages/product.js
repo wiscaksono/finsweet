@@ -82,8 +82,28 @@ export default function product() {
             </p>
           </div>
         </div>
-        <div className="w-[466.98px] h-[448px]">
-          <img src="data-driven.png" alt="" className="w-full h-full" />
+        <div className="w-[466px] h-[449px] relative">
+          <img
+            src="animate21.svg"
+            alt=""
+            className="absolute left-0 bottom-[167px] animate-bounce"
+          />
+          <img
+            src="animate22.svg"
+            alt=""
+            className="absolute left-[132px] bottom-0 "
+          />
+
+          <img
+            src="animate23.svg"
+            alt=""
+            className="absolute  right-0 top-[64px] animate-bounce"
+          />
+          <img
+            src="animate24.svg"
+            alt=""
+            className="absolute transform -translate-x-1/2 -translate-y-1/2  -z-50 top-1/2 left-1/2 animate-pulse"
+          />
         </div>
       </section>
 
