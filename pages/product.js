@@ -1,8 +1,8 @@
-import {Navbar, Footer} from "../components/advanced";
-import {CTA, Logoipsum} from "../components/partials";
-import Btn from "../components/Button";
-import BtnWhite from "../components/ButtonWhite";
-import Features from "../components/Features";
+import {Navbar, Footer} from "components/advanced";
+import {CTA, Logoipsum} from "components/partials";
+import Btn from "components/Button";
+import BtnWhite from "components/ButtonWhite";
+import Features from "components/Features";
 
 const Service = ({ icon, title }) => {
   return (
@@ -106,7 +106,7 @@ export default function product() {
       </section>
 
       <section className="wrapper flex gap-[88px] my-[128px] items-center">
-        <div className="absolute -z-10 right-0">
+        <div className="absolute right-0 -z-10">
           <img src="/that-convert.png" alt="" className="w-full h-full" />
         </div>
         <div>

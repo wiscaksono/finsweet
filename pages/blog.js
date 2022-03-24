@@ -1,5 +1,5 @@
-import { Navbar, Footer } from "../components/advanced";
-import { CTA } from "../components/partials";
+import { Navbar, Footer } from "components/advanced";
+import { CTA } from "components/partials";
 import Link from "next/link";
 
 const Posts = ({ img, title, paragraph }) => {

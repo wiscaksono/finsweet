@@ -1,6 +1,6 @@
 
-import {Navbar, Footer} from "../components/advanced/";
-import {CTA} from "../components/partials";
+import {Navbar, Footer} from "components/advanced/";
+import {CTA} from "components/partials";
 
 const Features = ({ img, title }) => {
   return (

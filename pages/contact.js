@@ -1,6 +1,6 @@
-import { Navbar, Footer } from "../components/advanced";
-import { CTA } from "../components/partials";
-import Button from "../components/Button";
+import { Navbar, Footer } from "components/advanced";
+import { CTA } from "components/partials";
+import Button from "components/Button";
 
 const Contact = ({ img, title, paragraph }) => {
   return (

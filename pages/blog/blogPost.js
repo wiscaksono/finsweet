@@ -1,5 +1,5 @@
-import { CTA } from "../../components/partials";
-import { Footer } from "../../components/advanced";
+import { CTA } from "components/partials";
+import { Footer } from "components/advanced";
 import Link from "next/dist/client/link";
 
 const Posts = ({ img, title, paragraph }) => {

@@ -1,6 +1,6 @@
 import Head from "next/head";
 // import Image from "next/image";
-import { Navbar, Footer, ServiceContent } from "../components/advanced";
+import { Navbar, Footer, ServiceContent } from "components/advanced";
 import {
   Homepage,
   Logoipsum,
@@ -8,8 +8,8 @@ import {
   Testimonial,
   Service,
   HomeContent,
-} from "../components/partials";
-import { Title } from "../components/basics/Title";
+} from "components/partials";
+import { Title } from "components/basics/Title";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <Service
           subTitle={"High-quality"}
           title={"We have the Best Solution for your Business"}
-          className="bg-light-violet p-16 gap-8"
+          className="gap-8 p-16 bg-light-violet"
         >
           <ServiceContent
             icon="security.svg"
