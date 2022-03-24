@@ -9,15 +9,15 @@ export default function Navbar() {
     const tl = new gsap.timeline();
 
     tl.from("#logo", 0.7, { opacity: 0, y: -50 })
-    tl.from("#menu-item", 1, {
-      opacity: 0,
-      y: -50,
-      stagger:{
-        amount: .3
-      },
-      ease: Power3.easeOut
-    })
-    tl.from("#btn-trial", { opacity: 0, y: -50 }, "-=1")
+      .from("#menu-item", 1, {
+        opacity: 0,
+        y: -50,
+        stagger: {
+          amount: .3
+        },
+        ease: Power3.easeOut
+      })
+      .from("#btn-trial", { opacity: 0, y: -50 }, "-=1")
 
   }, [])
 

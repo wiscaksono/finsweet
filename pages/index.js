@@ -1,17 +1,18 @@
 import Head from "next/head";
 // import Image from "next/image";
-import { Navbar, Footer, ServiceContent } from "components/advanced";
+import { Navbar, Footer, } from "components/advanced";
 import {
   Homepage,
   Logoipsum,
   CTA,
   Testimonial,
   Service,
-  HomeContent,
+  ServiceContent
 } from "components/partials";
 import { Title } from "components/basics/Title";
 
 export default function Home() {
+
   return (
     <>
       <Head>
@@ -23,21 +24,9 @@ export default function Home() {
         <Service
           subTitle={"High-quality"}
           title={"We have the Best Solution for your Business"}
-          className="gap-8 p-16 bg-light-violet"
-        >
-          <ServiceContent
-            icon="security.svg"
-            title="High security to protect from piracy"
-          />
-          <ServiceContent
-            icon="premium.svg"
-            title="Premium quality performance"
-          />
-          <ServiceContent
-            icon="support.svg"
-            title="Full time customer support - 24/7"
-          />
-        </Service>
+          classNameParent="gap-8 p-16 bg-light-violet"
+          serviceData={serviceData.dataOne}
+        />
         {/* Why Us */}
         <section className="wrapper grid grid-cols-2 gap-8 mb-[128px]">
           <Title
@@ -148,24 +137,11 @@ export default function Home() {
 
         <Service
           title={"Features"}
-          className="bg-[#D798E1] bg-opacity-[15%] px-8 py-16"
-        >
-          <ServiceContent
-            icon="encryption.svg"
-            title="Advanced 256-bit encryption"
-            className="px-8 border-r-[1px] border-gray-300"
-          />
-          <ServiceContent
-            icon="collaboration.svg"
-            title="Simple collaboration tools"
-            className="px-8 border-x-[1px]  border-gray-300"
-          />
-          <ServiceContent
-            icon="ai.svg"
-            title="Customizable AI features"
-            className="px-8 border-l-[1px] border-gray-300"
-          />
-        </Service>
+          classNameParent="bg-[#D798E1] bg-opacity-[15%]  divide-x-2 divide-gray-300 px-8 py-16"
+          serviceData={serviceData.dataTwo}
+          classNameChild="px-8"
+        />
+
         <Testimonial />
         <CTA />
         <Footer />
@@ -198,3 +174,35 @@ const Discover = ({ icon, title, desc }) => {
     </div>
   );
 };
+
+
+const serviceData = {
+  dataOne: [
+    {
+      icon: "security.svg",
+      title: "High security to protect from piracy"
+    },
+    {
+      icon: "premium.svg",
+      title: "Premium quality performance"
+    },
+    {
+      icon: "support.svg",
+      title: "Full time customer support - 24/7"
+    },
+  ],
+  dataTwo: [
+    {
+      icon: "encryption.svg",
+      title: "Advanced 256-bit encryption"
+    },
+    {
+      icon: "collaboration.svg",
+      title: "Simple collaboration tools"
+    },
+    {
+      icon: "ai.svg",
+      title: "Customizable AI features"
+    },
+  ]
+}

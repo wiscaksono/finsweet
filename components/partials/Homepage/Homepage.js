@@ -13,7 +13,7 @@ export const Homepage = () => {
       }
     }, "+=0.5");
 
-    tl.to("#imageHero", 1, { opacity: 1, y: -30 });
+    tl.to("#imageHero", 1, { opacity: 1, y: -30 }, "-=0.5");
   }, []);
 
   return (
