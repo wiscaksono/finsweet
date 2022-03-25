@@ -71,7 +71,7 @@ export default function Home() {
     const tl4 = gsap.timeline({
       ease: Power3.easeOut,
       scrollTrigger: {
-        trigger: "#section4",
+        trigger: "#section6",
         start: "top bottom",
       }
     });
