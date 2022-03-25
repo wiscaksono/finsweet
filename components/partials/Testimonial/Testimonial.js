@@ -23,7 +23,7 @@ export const Testimonial = () => {
       opacity: 0,
       y: 100,
       stagger: 0.1,
-    }, "-=0.8")
+    }, "-=0.5")
   }, [])
 
   return (

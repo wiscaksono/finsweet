@@ -10,8 +10,83 @@ import {
   ServiceContent
 } from "components/partials";
 import { Title } from "components/basics/Title";
+import { useEffect } from "react";
+import gsap, { Power3 } from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger)
 
 export default function Home() {
+  useEffect(() => {
+    const tl = gsap.timeline({
+      ease: Power3.easeOut,
+      scrollTrigger: {
+        trigger: "#service1",
+        start: "top bottom",
+      }
+    });
+
+    tl.from("#service1", 1, {
+      opacity: 0,
+      y: 100,
+    }).from("#service-content1", 0.7, {
+      opacity: 0,
+      y: 100,
+      stagger: 0.2,
+    }, "-=0.8")
+
+    const tl2 = gsap.timeline({
+      ease: Power3.easeOut,
+      scrollTrigger: {
+        trigger: "#service2",
+        start: "top bottom",
+      }
+    });
+
+    tl2.from("#service2", 1, {
+      opacity: 0,
+      y: 100,
+    }).from("#service-content2", 0.7, {
+      opacity: 0,
+      y: 100,
+      stagger: 0.2,
+    }, "-=0.8")
+
+    const tl3 = gsap.timeline({
+      ease: Power3.easeOut,
+      scrollTrigger: {
+        trigger: "#section3",
+        start: "top bottom",
+      }
+    });
+
+    tl3.from("#title-sec3", 1, {
+      opacity: 0,
+      y: 100,
+    }).from("#whyus", 0.7, {
+      opacity: 0,
+      x: 100,
+      stagger: 0.2,
+    }, "-=0.8")
+
+    const tl4 = gsap.timeline({
+      ease: Power3.easeOut,
+      scrollTrigger: {
+        trigger: "#section4",
+        start: "top bottom",
+      }
+    });
+
+    tl4.from("#title-sec6", 1, {
+      opacity: 0,
+      y: 100,
+    }).from("#discover", 0.7, {
+      opacity: 0,
+      x: 100,
+      stagger: 0.2,
+    }, "-=0.8")
+
+  }, [])
+
 
   return (
     <>
@@ -24,36 +99,48 @@ export default function Home() {
         <Service
           subTitle={"High-quality"}
           title={"We have the Best Solution for your Business"}
-          classNameParent="gap-8 p-16 bg-light-violet"
-          serviceData={serviceData.dataOne}
-        />
+          className="gap-8 p-16 bg-light-violet"
+          id="service1"
+        >
+          {serviceData.dataOne.map(data => (
+            <ServiceContent key={data.title} icon={data.icon} title={data.title} id="service-content1" />
+          ))}
+        </Service>
+
         {/* Why Us */}
-        <section className="wrapper grid grid-cols-2 gap-8 mb-[128px]">
-          <Title
-            subTitle={"Why should you work with us?"}
-            title={"To upscale your business to the next level"}
-          >
-            <p className="mt-8">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-              erat, sed diam voluptua invidunt ut labore.
-            </p>
-          </Title>
+        <section className="wrapper grid grid-cols-2 gap-8 mb-[128px]" id="section3">
+          <div id="title-sec3">
+            <Title
+              subTitle={"Why should you work with us?"}
+              title={"To upscale your business to the next level"}
+            >
+              <p className="mt-8">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+                erat, sed diam voluptua invidunt ut labore.
+              </p>
+            </Title>
+          </div>
           <div className="flex flex-col gap-[32px] mr-[40px]">
             <WhyUs
               icon={"arrow.svg"}
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod."
+            id="whyus"
             />
             <WhyUs
               icon={"arrow.svg"}
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod."
+            id="whyus"
+
             />
             <WhyUs
               icon={"arrow.svg"}
               desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod."
+            id="whyus"
+
             />
           </div>
         </section>
@@ -105,7 +192,8 @@ export default function Home() {
         <Logoipsum />
 
         {/* Discover */}
-        <section className="wrapper grid grid-cols-2 gap-8 mb-[128px]">
+        <section className="wrapper grid grid-cols-2 gap-8 mb-[128px]" id="section6">
+        <div id="title-sec6">
           <Title
             subTitle={"Discover More"}
             title={"Analyze your sales and marketing leads"}
@@ -116,31 +204,42 @@ export default function Home() {
               erat, sed diam voluptua invidunt ut labore.
             </p>
           </Title>
+</div>
+
           <div className="flex flex-col gap-[32px] mr-[40px]">
             <Discover
               icon={"sales-icon.svg"}
               title={"Sales Tracking"}
               desc={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr."}
+              id="discover"
             />
             <Discover
               icon={"project-management.svg"}
               title={"Project Management"}
               desc={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr."}
+              id="discover"
+
             />
             <Discover
               icon={"activity-report.svg"}
               title={"Activity Report"}
               desc={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr."}
+              id="discover"
+
             />
           </div>
         </section>
 
         <Service
           title={"Features"}
-          classNameParent="bg-[#D798E1] bg-opacity-[15%]  divide-x-2 divide-gray-300 px-8 py-16"
-          serviceData={serviceData.dataTwo}
+          className="bg-[#D798E1] bg-opacity-[15%] divide-x-2 divide-gray-300 px-8 py-16"
           classNameChild="px-8"
-        />
+          id="service2"
+        >
+          {serviceData.dataTwo.map(data => (
+            <ServiceContent key={data.title} icon={data.icon} title={data.title} id="service-content2" className="px-8" />
+          ))}
+        </Service>
 
         <Testimonial />
         <CTA />
@@ -150,9 +249,9 @@ export default function Home() {
   );
 }
 
-const WhyUs = ({ icon, desc }) => {
+const WhyUs = ({ icon, desc, id }) => {
   return (
-    <div className="flex gap-[24px] items-center">
+    <div className="flex gap-[24px] items-center" id={id}>
       <div className="w-[48px] h-[48px] flex-none">
         <img src={icon} alt="" className="w-full h-full" />
       </div>
@@ -161,9 +260,9 @@ const WhyUs = ({ icon, desc }) => {
   );
 };
 
-const Discover = ({ icon, title, desc }) => {
+const Discover = ({ icon, title, desc, id }) => {
   return (
-    <div className="flex gap-[24px] items-center">
+    <div className="flex gap-[24px] items-center" id={id}>
       <div className="w-[72px] h-[72px] flex-none">
         <img src={icon} alt="" className="w-full h-full" />
       </div>
