@@ -1,4 +1,4 @@
-export const Title = ({ subTitle, title, children, className, position="mx-auto", ref }) => {
+export const Title = ({ subTitle, title, children, className, position="mx-auto" }) => {
   return (
     <div className={`max-w-[628px] ${position} ${className}`} >
       <h4 className="label mb-[24px]">{subTitle}</h4>
